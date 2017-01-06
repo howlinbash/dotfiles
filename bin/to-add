@@ -1,6 +1,0 @@
-
-# PSEUDO ALIASES FOR COMMONLY USED LONG COMMANDS
-# - function fname() { find . -iname "*$@*"; }
-# - function mcd() { mkdir $1 && cd $1; }
-#
-#  - lines = cat $1 | wc -l

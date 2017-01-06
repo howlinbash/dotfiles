@@ -1,0 +1,10 @@
+#!/bin/bash
+
+bin="$HOME/bin"
+temp="$bin/templates/phold"
+phold=$bin/$1
+
+cp $temp $phold
+chmod +x $phold
+source $HOME/.bashrc
+vim $phold

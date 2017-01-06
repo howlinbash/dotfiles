@@ -1,0 +1,5 @@
+#!/bin/bash
+
+dbase="/home/howlin/people/email/contacts.csv"
+# cat $dbase | column -t -s '\,' | grep "$1" 
+cat $dbase | column -s, -t | grep "$1" 

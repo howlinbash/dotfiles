@@ -75,4 +75,50 @@ set splitright
 set relativenumber
 command! MakeTags !ctags -R .
 
-" hello
+"
+" Beginning a new vimrc from here
+"
+
+let mapleader = ","
+
+" write and quit
+map <Leader>w <esc>:w<CR>     
+map <Leader>q <esc>:q<CR>     
+map <Leader>qq <esc>:q!<CR>     
+map <Leader>wq <esc>:wq<CR>     
+map <Leader>wqq <esc>:wq!<CR>     
+
+" append a # comment
+nnoremap <leader>c $a <esc>30i <esc>r#31<bar>dw$
+nnoremap <leader>cc $a <esc>10i <esc>r#$
+
+" views
+map <Leader>sv :vsplit 
+map <Leader>sh :split 
+map <Leader>fh :10winc <<CR>
+map <Leader>fl :10winc ><CR>
+map <Leader>fk :10winc -<CR>
+map <Leader>fj :10winc +<CR>
+map <Leader>ww <C-w>w
+map <Leader>wh <C-w>h
+map <Leader>wj <C-w>j
+map <Leader>wk <C-w>k
+map <Leader>wl <C-w>l
+map <Leader>wr <C-w>r
+map <Leader>wt <C-w>t
+map <Leader>wb <C-w>b
+
+" paste
+map <Leader>sp :set paste<CR><esc>
+
+" Set/unset column
+map <Leader>80 :set colorcolumn=80<CR>
+map <Leader>08 :set colorcolumn&<CR>
+
+map <Leader>e :edit 
+
+" :sexplore
+" wordwrap
+" macro to add ' - '
+" entering ex mode type visual (:WQ)
+" :cd :pwd

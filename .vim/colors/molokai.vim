@@ -140,14 +140,17 @@ if &t_Co > 255
       hi CursorLine               ctermbg=235   cterm=none
       hi CursorLineNr ctermfg=208               cterm=none
    else
-      hi Normal       ctermfg=252 ctermbg=233
+      "hi Normal       ctermfg=252 ctermbg=233
+      hi Normal       ctermfg=252 ctermbg=234
       hi CursorLine               ctermbg=234   cterm=none
-      hi CursorLineNr ctermfg=208               cterm=none
+      "hi CursorLineNr ctermfg=208               cterm=none
+      hi CursorLineNr ctermfg=142               cterm=none
    endif
    hi Boolean         ctermfg=135
    hi Character       ctermfg=144
    hi Number          ctermfg=135
-   hi String          ctermfg=144
+   "hi String          ctermfg=144
+   hi String          ctermfg=227
    hi Conditional     ctermfg=161               cterm=bold
    hi Constant        ctermfg=135               cterm=bold
    hi Cursor          ctermfg=16  ctermbg=253
@@ -205,8 +208,10 @@ if &t_Co > 255
        hi SpellLocal              ctermbg=17
        hi SpellRare  ctermfg=none ctermbg=none  cterm=reverse
    endif
-   hi Statement       ctermfg=161               cterm=bold
-   hi StatusLine      ctermfg=238 ctermbg=253
+   "hi Statement       ctermfg=161               cterm=bold
+   "hi StatusLine      ctermfg=238 ctermbg=253
+   hi Statement       ctermfg=161               
+   hi StatusLine      ctermfg=238 ctermbg=142
    hi StatusLineNC    ctermfg=244 ctermbg=232
    hi StorageClass    ctermfg=208
    hi Structure       ctermfg=81
@@ -227,7 +232,8 @@ if &t_Co > 255
    hi Comment         ctermfg=59
    hi CursorColumn                ctermbg=236
    hi ColorColumn                 ctermbg=236
-   hi LineNr          ctermfg=250 ctermbg=236
+   "hi LineNr          ctermfg=250 ctermbg=236
+   hi LineNr          ctermfg=238 ctermbg=234
    hi NonText         ctermfg=59
 
    hi SpecialKey      ctermfg=59

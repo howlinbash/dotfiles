@@ -1,4 +1,3 @@
 #!/bin/bash
 
-echo "# don't forget to fig commit when fixed"
-echo "mkdir $1 && mv !($1) $1"
+echo "mkdir $1 && mv !($1) $1" | xclip -sel c

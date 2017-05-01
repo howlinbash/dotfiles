@@ -1,3 +1,0 @@
-#!/bin/bash
-
-find /run/media/howlin/forgetterbox/Karaoke/ -iname "*$1*" | grep -e '.avi' -e '.mp3' -e '.mp4' -e 'mpeg' -e '.mpg' -e '.wav' -e '.zip' -e '.rar' | less

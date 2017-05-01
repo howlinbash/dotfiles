@@ -62,3 +62,4 @@ map <CR> o<Esc>|                                  " Intuitive enter key
 map <Leader>o O<Esc>|                             " Push current line down 1
 map <Leader>do :setlocal foldmethod=indent<CR>|   " todo folding
 map <Leader>date :r! date -I<CR>kJA|              " append date to line
+map <Leader>syn :SyntasticCheck<CR>|              " turn syntastic checker on

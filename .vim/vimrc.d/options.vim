@@ -33,6 +33,7 @@ set showmatch                 " show matching brackets
 set matchtime=3               " blink between matching braces (tenths/sec)
 set scrolloff=2               " Keep 2 lines (top/bottom) for scope
 "set sidescrolloff=10          " Keep 5 lines at the size (DKWTD!)
+"set mouse=a                   " allow mouse control
 
 filetype plugin indent on     " customise by filetype in .vim/after/ftplugin
 set expandtab                 " Insert mode: Tab key inserts (softtabstap) spaces
@@ -46,3 +47,8 @@ execute pathogen#infect()
 " Enable ctags
 command! MakeTags !ctags -R .
 set tags=./tags,tags;$HOME
+
+" Fold markdown files by heading
+au BufEnter *.md setlocal foldexpr=MarkdownLevel()
+au BufEnter *.md setlocal foldmethod=expr
+au BufEnter *.md setlocal foldclose=all

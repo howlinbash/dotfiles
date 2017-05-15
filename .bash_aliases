@@ -22,15 +22,15 @@ alias rd='rm -rf'
 alias naut='nautilus --browser'
 
 ## Bookmarks
-alias box='cd /home/howlin/sandbox'
-alias cork='cd /home/howlin/corkboard'
-alias dl='cd /home/howlin/Downloads'
-alias fs='cat /home/howlin/corkboard/my-fs.md'
-alias play='cd /home/howlin/cupboard/sandpit'
-alias src='cd /home/howlin/src'
-alias tmp='cd /home/howlin/tmp'
+alias box='cd ~/sandbox'
+alias cork='cd ~/corkboard'
+alias dl='cd ~/Downloads'
+alias fs='cat ~/corkboard/my-fs.md'
+alias play='cd ~/cupboard/sandpit'
+alias src='cd ~/src'
+alias tmp='cd ~/tmp'
 alias usb='cd /media'
-alias baby='cd /home/howlin/src/life-gits/baby'
+alias baby='cd ~/src/life-gits/baby'
 
 ## Templates
 alias finds='echo "find . -iname \"*string*\""'
@@ -193,7 +193,7 @@ alias pgrp="pgss; echo ''; pgbv; echo ''; pglb"
 #alias pgrp="public-dots status -s; echo ''; public-dots branch -vv; echo ''; public-dots log --oneline --decorate --graph -10 --all"
 
 ## Custom
-alias ali='vim /home/howlin/.bash_aliases'
+alias ali='vim ~/.bash_aliases'
 alias gali='alias | grep'
 alias hcat='cat | head'
 alias tcat='cat | tail'

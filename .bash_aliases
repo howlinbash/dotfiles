@@ -195,8 +195,6 @@ alias pgrp="pgss; echo ''; pgbv; echo ''; pglb"
 ## Custom
 alias ali='vim ~/.bash_aliases'
 alias gali='alias | grep'
-alias hcat='cat | head'
-alias tcat='cat | tail'
 alias vu='chromium'
 alias wcl='wc -l'
 alias wcc='wc -c'
@@ -208,7 +206,6 @@ alias v='vim'
 alias hx="history 1 | cut -c 8- | xclip -sel c"
 alias hxv="history 5 | cut -c 8- | xclip -sel c"
 alias hxvv="history 10 | cut -c 8- | xclip -sel c"
-#alias hcat='cat \!:1 | head'
 
 ## Bookmarks
 ## TODO: turn this into proper bash program

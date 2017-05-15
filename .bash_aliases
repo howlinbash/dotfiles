@@ -25,7 +25,6 @@ alias naut='nautilus --browser'
 alias box='cd ~/sandbox'
 alias cork='cd ~/corkboard'
 alias dl='cd ~/Downloads'
-alias fs='cat ~/corkboard/my-fs.md'
 alias play='cd ~/cupboard/sandpit'
 alias src='cd ~/src'
 alias tmp='cd ~/tmp'
@@ -207,6 +206,13 @@ alias hx="history 1 | cut -c 8- | xclip -sel c"
 alias hxv="history 5 | cut -c 8- | xclip -sel c"
 alias hxvv="history 10 | cut -c 8- | xclip -sel c"
 
+## Notes
+alias fs='cat ~/.notes/my-fs.md'
+alias cheat='vim ~/.notes/cheatsheet.md'
+alias hacks='vim ~/.notes/hacks.md'
+alias todo='vim ~/.notes/todo.md'
+alias life='vim ~/.notes/life.md'
+
 ## Bookmarks
 ## TODO: turn this into proper bash program
 alias b1='cd ~/src/jnl/3-jobs-doing/blog/'
@@ -222,13 +228,9 @@ alias b0='cd ~/src/jnl/levelup/'
 
 ## Unsorted
 alias mutt='cd ~/Mail/attachments && mutt'
-alias todo='vim ~/corkboard/todo.md'
-alias life='vim ~/corkboard/life.md'
 alias l='less'
 alias g='grep -i'
 alias diff='colordiff'
-alias cheat='vim ~/corkboard/cheatsheet.md'
-alias hacks='vim ~/corkboard/hacks.md'
 alias mark='vim ~/.cdg_paths'
 alias amark='pwd >> ~/.cdg_paths'
 alias ashf='vim ~/.bashrc.d/functions.sh'

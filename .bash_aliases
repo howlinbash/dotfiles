@@ -30,6 +30,7 @@ alias play='cd /home/howlin/cupboard/sandpit'
 alias src='cd /home/howlin/src'
 alias tmp='cd /home/howlin/tmp'
 alias usb='cd /media'
+alias baby='cd /home/howlin/src/life-gits/baby'
 
 ## Templates
 alias finds='echo "find . -iname \"*string*\""'
@@ -227,13 +228,14 @@ alias mutt='cd ~/Mail/attachments && mutt'
 alias todo='vim ~/corkboard/todo.md'
 alias life='vim ~/corkboard/life.md'
 alias l='less'
-alias g='grep'
+alias g='grep -i'
 alias diff='colordiff'
 alias cheat='vim ~/corkboard/cheatsheet.md'
 alias hacks='vim ~/corkboard/hacks.md'
 alias mark='vim ~/.cdg_paths'
 alias amark='pwd >> ~/.cdg_paths'
 alias ashf='vim ~/.bashrc.d/functions.sh'
+alias exe='chmod +x'
 
 ## Maybe
 # alias irc=''

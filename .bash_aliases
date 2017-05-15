@@ -235,6 +235,7 @@ alias mark='vim ~/.cdg_paths'
 alias amark='pwd >> ~/.cdg_paths'
 alias ashf='vim ~/.bashrc.d/functions.sh'
 alias exe='chmod +x'
+alias scrap='vim ~/tmp/scrap.md'
 
 ## Maybe
 # alias irc=''

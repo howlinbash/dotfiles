@@ -16,3 +16,8 @@ for config in "$HOME"/.bashrc.d/*.sh ; do
     source "$config"
 done
 unset -v config
+
+# # Auto-start sway
+# if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
+#   exec sway
+# fi

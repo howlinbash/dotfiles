@@ -14,3 +14,16 @@ cdg() {
    fi
 }
 export -f cdg > /dev/null
+
+# Create log book
+function log() {
+  today=$(date '+%Y-%m-%d')
+  logs="/home/howlin/log/"
+  new_log="${logs}${today}.md"
+  last_log="${logs}`ls --group-directories-first ${logs} | tail -1`"
+  if [ ! -f $new_log ]; then
+      cat $last_log > $new_log
+      sed -i "1c\#\ ${today}" $new_log
+  fi
+  vim $new_log
+}

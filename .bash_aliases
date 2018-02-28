@@ -2,6 +2,7 @@
 
 # MY DOTFILES
 
+alias vim='nvim'
 
 ## Basics
 alias c='clear'
@@ -29,7 +30,7 @@ alias play='cd ~/cupboard/sandpit'
 alias src='cd ~/src'
 alias tmp='cd ~/tmp'
 alias usb='cd /media'
-alias baby='cd ~/src/life-gits/baby'
+alias baby='cd ~/life/src/baby'
 
 ## Templates
 alias finds='echo "find . -iname \"*string*\""'
@@ -58,6 +59,7 @@ alias tr5='tree -L 5'
 alias agi='sudo apt-get install -y'
 alias pmd='sudo pacman -Rs'
 alias pmg='sudo pacman -Qe | grep'
+alias pmgg='sudo pacman -Qs'
 alias pms='sudo pacman -S'
 alias pmu='sudo pacman -Syu'
 
@@ -71,6 +73,7 @@ alias gbv='git branch -vv'
 alias gc='git commit -m'
 alias gca='git commit -a -m'
 alias gcl='git clone'
+# alias gclh='bash -xc '\''git clone gh:$0'\'''
 alias gclr='git clone --recursive'
 alias gd='git diff'
 alias gdc='git diff --cached'
@@ -86,6 +89,7 @@ alias glbb='git log --oneline --decorate --graph --all'
 alias gls='git ls-tree --name-only master'
 alias glsr='git ls-files'
 alias gm='git merge'
+alias gmf='git merge --no-ff'
 alias go='git checkout'
 alias gob='git checkout -b'
 alias gr='git remote'
@@ -129,6 +133,7 @@ alias dglbb='dot log --oneline --decorate --graph --all'
 alias dgls='dot ls-tree --name-only master'
 alias dglsr='dot ls-files'
 alias dgm='dot merge'
+alias dgmf='dot merge --no-ff'
 alias dgo='dot checkout'
 alias dgob='dot checkout -b'
 alias dgr='dot remote'
@@ -146,6 +151,7 @@ alias dgzh='dot reset HEAD~'
 alias dgza='dot commit --amend'
 alias dgrp="dgss; echo ''; dgbv; echo ''; dglb"
 #alias dgrp="dot status -s; echo ''; dot branch -vv; echo ''; dot log --oneline --decorate --graph -10 --all"
+alias dgig="vim ~/.dot/info/exclude"
 
 ### Public Dotfiles (git)
 alias pubdot='/usr/bin/git --git-dir=$HOME/.public-dots/ --work-tree=$HOME'
@@ -173,6 +179,7 @@ alias pglbb='pubdot log --oneline --decorate --graph --all'
 alias pgls='pubdot ls-tree --name-only master'
 alias pglsr='pubdot ls-files'
 alias pgm='pubdot merge'
+alias pgmf='pubdot merge --no-ff'
 alias pgo='pubdot checkout'
 alias pgob='pubdot checkout -b'
 alias pgr='pubdot remote'
@@ -190,6 +197,7 @@ alias pgzh='pubdot reset HEAD~'
 alias pgza='pubdot commit --amend'
 alias pgrp="pgss; echo ''; pgbv; echo ''; pglb"
 #alias pgrp="public-dots status -s; echo ''; public-dots branch -vv; echo ''; public-dots log --oneline --decorate --graph -10 --all"
+alias pgig="vim ~/.public-dots/info/exclude"
 
 ## Custom
 alias ali='vim ~/.bash_aliases'
@@ -202,9 +210,9 @@ alias xc='xclip -sel c'
 alias xcv='xclip -sel clip <'
 alias xcp='xclip -o >'
 alias v='vim'
-alias hx="history 1 | cut -c 8- | xclip -sel c"
-alias hxv="history 5 | cut -c 8- | xclip -sel c"
-alias hxvv="history 10 | cut -c 8- | xclip -sel c"
+alias hx="history 2 | cut -c 8- | head -n -1 | xclip -sel c"
+alias hxv="history 6 | cut -c 8- | head -n -1 | xclip -sel c"
+alias hxvv="history 11 | cut -c 8- | head -n -1 | xclip -sel c"
 
 ## Notes
 alias fs='cat ~/.notes/my-fs.md'
@@ -212,22 +220,10 @@ alias cheat='vim ~/.notes/cheatsheet.md'
 alias hacks='vim ~/.notes/hacks.md'
 alias todo='vim ~/.notes/todo.md'
 alias life='vim ~/.notes/life.md'
-
-## Bookmarks
-## TODO: turn this into proper bash program
-alias b1='cd ~/src/jnl/3-jobs-doing/blog/'
-alias b2='cd ~/src/myhyde/'
-alias b3='cd ~/sandbox/howlin-io/'
-alias b4='cd ~/sandbox/howlin-io/'
-alias b5='cd ~/sandbox/howlin-io/'
-alias b6='cd ~/sandbox/howlin-io/'
-alias b7='cd ~/sandbox/howlin-io/'
-alias b8='cd ~/sandbox/howlin-io/'
-alias b9='cd ~/sandbox/howlin-io/'
-alias b0='cd ~/src/jnl/levelup/'
+alias zen='vim ~/.notes/zen.md'
 
 ## Unsorted
-alias mutt='cd ~/Mail/attachments && mutt'
+alias mutt='cd ~/mail/attachments && mutt'
 alias l='less'
 alias g='grep -i'
 alias diff='colordiff'
@@ -236,6 +232,24 @@ alias amark='pwd >> ~/.cdg_paths'
 alias ashf='vim ~/.bashrc.d/functions.sh'
 alias exe='chmod +x'
 alias scrap='vim ~/tmp/scrap.md'
+alias gpu='optirun -b none nvidia-settings -c :8 &'
+alias shot='gnome-screenshot -a'
+alias tube='cd ~/Downloads/mps && youtube-dl -f m4a'
+alias dirs='dirs -v'
+alias bbcr='cd ~/Downloads/mps && get_iplayer --type=radio'
+alias pdf='evince'
+alias bright='sudo tee /sys/class/backlight/intel_backlight/brightness <<< '
+alias r='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
+alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
+alias rc='recode UTF-8'
+alias rct='file -bi'
+alias pll='/home/howlin/.gem/ruby/2.4.0/bin/ppl'
+alias wl='cat >> ~/.notes/worklog'
+alias vpn='wg-quick@wg0-client.service'
+alias clock='tty-clock'
+alias diary='vim ~/life/diary.md'
+alias job='vim ~/job/notes/job_hunt_notes.md'
+alias disk='udiskie -2 &'
 
 ## Maybe
 # alias irc=''

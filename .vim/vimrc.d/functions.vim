@@ -1,17 +1,17 @@
 function ToggleWrap()
- if (&wrap == 0)
-   set nowrap
-   set nolinebreak
-   set list
-   "set textwidth=0
-   "set wrapmargin=0
- else
-   set wrap
-   set linebreak
-   set nolist
-   "set textwidth=0
-   "set wrapmargin=0
- endif
+  if (&wrap == 0)
+    set nowrap
+    set nolinebreak
+    set list
+    "set textwidth=0
+    "set wrapmargin=0
+  else
+    set wrap
+    set linebreak
+    set nolist
+    "set textwidth=0
+    "set wrapmargin=0
+  endif
 endfunction
 
 " fold markdown files by heading
@@ -25,5 +25,61 @@ function MarkdownLevel()
     return ">" . f
   else
     return "="
+  endif
+endfunction
+
+" Toggle line numbers
+function ToggleNumbers()
+  if (&number == 1)
+    set nonumber
+    set norelativenumber
+  else
+    set number
+    set relativenumber
+  endif
+endfunction
+
+" Toggle Text Width line breaks
+function ToggleTextWidth()
+  if (&tw == 0)
+    set tw=80
+  else
+    set tw=0
+  endif
+endfunction
+
+"" RANGER
+
+" RangerVSplit
+function RangerVSplit()
+  execute 'vsplit ./'
+  execute 'Ranger'
+endfunction
+
+" RangerSplit
+function RangerSplit()
+  execute 'split ./'
+  execute 'Ranger'
+endfunction
+
+" Toggle Spell checker
+function ToggleSpell()
+  if (&spell == 0)
+    set spell spelllang=en_gb
+  else
+    set nospell
+  endif
+endfunction
+
+" Toggle Python Folding
+function ToggleFold()
+  if (&foldmethod == 'indent')
+    setlocal foldmethod=manual
+    setlocal foldopen
+    setlocal nofoldenable
+  else
+    setlocal foldenable
+    setlocal foldmethod=indent
+    setlocal foldclose=all
   endif
 endfunction

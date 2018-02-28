@@ -16,10 +16,10 @@ map <Leader>wqq <esc>:wq!<CR>|     " force write and quit
 
 map <Leader>sv :vsplit |           " split vertically
 map <Leader>sh :split |            " split horizontally
-map <Leader>fh :10winc ><CR>|      " push split left
-map <Leader>fj :10winc -<CR>|      " push split down
-map <Leader>fk :10winc +<CR>|      " push split up
-map <Leader>fl :10winc <<CR>|      " push split right
+map <Leader>fh :10winc <<CR>|      " pull split left
+map <Leader>fj :10winc +<CR>|      " push split down
+map <Leader>fk :10winc -<CR>|      " pull split up
+map <Leader>fl :10winc ><CR>|      " push split right
 map <Leader>fs :tab split<CR>|     " go fullscreen (open in new tab)
 map <Leader>fsb :tabc<CR>|         " close fullscreen (close tab)
 map <Leader>ww <C-w>w|             " move to next window
@@ -51,6 +51,16 @@ map <Leader>80 :set colorcolumn=80<CR>| " draw column on 80|
 map <Leader>08 :set colorcolumn&<CR>|   " remove colum on 80|
 
 
+"" VISUAL
+
+map <Leader>v} <C-V>}k:norm |           " visually block paragraph up for command
+map <Leader>v{ <C-V>{j:norm |           " visually block paragraph down for command
+map <Leader>v}. <C-V>}k:norm .<CR>|     " visually block paragraph up for command
+map <Leader>v{. <C-V>{j:norm .<CR>|     " visually block paragraph up for command
+map <Leader>v}@ <C-V>}k:norm @@<CR>|    " visually block paragraph down for command
+map <Leader>v{@ <C-V>{j:norm @@<CR>|    " visually block paragraph down for command
+
+
 "" FUNCTIONS
 
 map <Leader>wrap :call ToggleWrap()<CR>|          " wrap text
@@ -63,3 +73,14 @@ map <Leader>o O<Esc>|                             " Push current line down 1
 map <Leader>do :setlocal foldmethod=indent<CR>|   " todo folding
 map <Leader>date :r! date -I<CR>kJA|              " append date to line
 map <Leader>syn :SyntasticCheck<CR>|              " turn syntastic checker on
+map <Leader>spn :call ToggleNumbers()<CR>|        " Toggle line numbers
+map <Leader>tw :call ToggleTextWidth()<CR>|       " Toggle Hard break text on column 80
+map <Leader>spel :call ToggleSpell()<CR>|         " Toggle Spell Checker
+map <Leader>fold :call ToggleFold()<CR>|          " Toggle folding for python
+
+
+"" RANGER
+
+map <leader>rr :Ranger<CR>
+map <leader>rv :call RangerVSplit()<CR>
+map <leader>rh :call RangerSplit()<CR>

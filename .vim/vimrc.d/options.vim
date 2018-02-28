@@ -41,14 +41,17 @@ set softtabstop=4             " Insert mode: how many spaces Tab represents
 set shiftwidth=4              " How many columns >> & << move
 set tabstop=4                 " How many columns a tab counts for
 
-"Package manager https://github.com/tpope/vim-pathogen
-execute pathogen#infect()
-
 " Enable ctags
 command! MakeTags !ctags -R .
 set tags=./tags,tags;$HOME
 
 " Fold markdown files by heading
-au BufEnter *.md setlocal foldexpr=MarkdownLevel()
-au BufEnter *.md setlocal foldmethod=expr
-au BufEnter *.md setlocal foldclose=all
+" au BufNewFile,BufReadPost *.md set filetype=markdown
+" au BufEnter *.md setlocal foldexpr=MarkdownLevel()
+" au BufEnter *.md setlocal foldmethod=expr
+" au BufEnter *.md setlocal foldclose=all
+let g:markdown_fenced_languages = ['css', 'erb=eruby', 'javascript', 'js=javascript', 'json=javascript', 'ruby', 'sass', 'xml', 'html']
+let g:ranger_map_keys = 0
+
+set wildmenu
+set wildmode=longest:full,full

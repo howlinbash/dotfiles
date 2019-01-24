@@ -23,7 +23,21 @@ function log() {
   last_log="${logs}`ls --group-directories-first ${logs} | tail -1`"
   if [ ! -f $new_log ]; then
       cat $last_log > $new_log
-      sed -i "1c\#\ ${today}" $new_log
+      sed -i "1c${today}" $new_log
+      sed -i "2c\=\=\=\=\=\=\=\=\=\=" $new_log
   fi
   vim $new_log
+}
+
+function fj() {
+    sed -e "s/\$1/$1/" smr.md | head -c -1 | xclip -sel c 
+}
+
+function fjfjf() {
+    cwd=$(pwd)
+    cd /home/howlin/src/howlinbash
+	bundle exec jekyll build
+	docker stop dev-server
+	docker run -d --rm --name dev-server -p 80:80 -v "$(pwd)/web:/usr/share/nginx/html" howlinbash/dev
+	cd $pwd
 }

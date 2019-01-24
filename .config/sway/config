@@ -9,8 +9,8 @@ include /etc/sway/config.d/*
 ### Status Bar
 #
 bar {
-    # output eDP-1
-    output DP-1
+    output eDP-1
+    # output DP-1
     # output VGA-1
  	status_command  i3status 
     position top
@@ -213,6 +213,8 @@ client.unfocused        #0197f6 #000000 #ffffff #000000   #0197f6
 ## Sreen brightness controls
 bindsym XF86MonBrightnessUp exec brightnessctl s +5% # increase screen brightness
 bindsym XF86MonBrightnessDown exec brightnessctl s 5%- # decrease screen brightness
+# bindsym XF86MonBrightnessUp exec brightnessctl s +1% # increase screen brightness
+# bindsym XF86MonBrightnessDown exec brightnessctl s 1%- # decrease screen brightness
 ## Volume Control
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +5%
 bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -5%
@@ -229,7 +231,7 @@ bindsym $mod+Shift+i exec google-chrome-stable
 bindsym $mod+Shift+s exec chromium --profile-directory=Default --app-id=bikioccmkafdpakkkcpdbppfkghcmihk
 
 ## Settings
-# bindsym $mod+c exec $term -e "vim $HOME/.config/sway/config"
+bindsym $mod+c exec $term -e "$EDITOR $HOME/.config/sway/config"
 
 
 ### Cycle Workspaces
@@ -274,11 +276,11 @@ output "*" background ~/Pictures/wallpaper.png fill
 # output eDP-1 resolution 1920x1080 position 0,1080
 # output DP-1 resolution 1920x1080 position 0,0
 
-# ## Work
-# output eDP-1 resolution 1920x1080 position 0,1080
-# output VGA-1 resolution 1920x1080 position 0,0
-
-## Home
+## Work
 output eDP-1 resolution 1920x1080 position 0,1080
-output DP-1 resolution 1920x1080 position 0,0
-output VGA-1 resolution 1440x900 position 1920,0
+output VGA-1 resolution 1920x1080 position 0,0
+
+# ## Home
+# output eDP-1 resolution 1920x1080 position 0,1080
+# output DP-1 resolution 1920x1080 position 0,0
+# output VGA-1 resolution 1440x900 position 1920,0

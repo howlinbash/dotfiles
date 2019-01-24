@@ -33,3 +33,17 @@ fh() {
 fkil() {
   ps -ef | sed 1d | fzf -m | awk '{print $2}' | xargs kill -${1:-9}
 }
+
+milk() {
+  local site
+  local www
+  www='/home/howlin/job/meetups/smr/links/www/'
+  site=$(find "$www" -maxdepth 1 -type f 2> /dev/null | fzf +m -i --with-nth=9.. --delimiter="\/") && firefox "$site"
+}
+
+milky() {
+  local csv
+  csv='/home/howlin/job/meetups/smr/smr.csv'
+  cat $csv | column -t -s ',' -H 1 | fzf
+}
+

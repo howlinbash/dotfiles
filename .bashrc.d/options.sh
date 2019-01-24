@@ -2,7 +2,8 @@
 ## Bash Settings
 HISTSIZE=
 HISTFILESIZE=
-
+PROMPT_COMMAND="$PROMPT_COMMAND; history -a"
+export HISTCONTROL=ignoreboth
 
 ## Cosmetics
 export TERM=xterm-256color
@@ -15,13 +16,11 @@ alias ls='ls --color=auto'
 
 ## Dev Paths
 export PATH=~/.node_modules/bin:"$PATH"
-export PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 export npm_config_prefix=~/.node_modules
-export GEM_HOME=$(ruby -e 'print Gem.user_dir')
-export WORKON_HOME=$HOME/.virtualenvs
+# export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/pycode
 export EDITOR=/usr/bin/nvim
-source /usr/bin/virtualenvwrapper.sh
+# source /usr/bin/virtualenvwrapper.sh
 #export PATH=~/.gem/ruby/2.4.0/bin:"$PATH"
 #PATH="$HOME/.node_modules/bin:$PATH"
 export PATH=/usr/bin/core_perl:"$PATH"
@@ -32,3 +31,10 @@ export PATH=~/bin:"$PATH"
 
 # extended pattern matching?
 shopt -s extglob
+
+# Ruby exports
+
+export PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
+export GEM_HOME=$(ruby -e 'print Gem.user_dir')
+# export GEM_HOME=$HOME/gems
+# export PATH=$HOME/gems/bin:$PATH

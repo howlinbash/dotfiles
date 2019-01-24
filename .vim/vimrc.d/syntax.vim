@@ -1,7 +1,7 @@
 
 " Custom Syntax
-au BufNewFile,BufRead *.cpp set syntax=cpp11
-au BufRead,BufNewFile *.handlebars,*.hbs set ft=html syntax=handlebars
+" au BufNewFile,BufRead *.cpp set syntax=cpp11
+" au BufRead,BufNewFile *.handlebars,*.hbs set ft=html syntax=handlebars
 "au BufNewFile,BufRead *.ts setlocal filetype=typescript
 
 " " syntastic setup
@@ -31,10 +31,10 @@ au BufRead,BufNewFile *.handlebars,*.hbs set ft=html syntax=handlebars
 "let g:syntastic_javascript_checkers+=['jscs']
 " let g:syntastic_python_checkers=['pylint']
 
-let g:typescript_compiler_binary = 'tsc'
-let g:typescript_compiler_options = ''
-autocmd QuickFixCmdPost [^l]* nested cwindow
-autocmd QuickFixCmdPost    l* nested lwindow
+" let g:typescript_compiler_binary = 'tsc'
+" let g:typescript_compiler_options = ''
+" autocmd QuickFixCmdPost [^l]* nested cwindow
+" autocmd QuickFixCmdPost    l* nested lwindow
 
 let g:ale_linters = {
 \   'javascript': ['eslint'],

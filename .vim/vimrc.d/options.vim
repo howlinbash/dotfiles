@@ -1,5 +1,3 @@
-set nocompatible              " A possibly redundant safety measure 
-
 set t_Co=256
 set background=dark
 colorscheme Tomorrow-Night
@@ -55,3 +53,14 @@ let g:ranger_map_keys = 0
 
 set wildmenu
 set wildmode=longest:full,full
+
+" " Netrw settings
+" let g:netrw_banner = 0
+" let g:netrw_liststyle = 3
+" let g:netrw_browse_split = 4
+" let g:netrw_winsize = 25
+" let g:netrw_list_hide = '\(^\|\s\s\)\zs\.\S\+'
+"
+set nohlsearch
+" hotreloading with parcel
+set backupcopy=yes

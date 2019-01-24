@@ -83,3 +83,29 @@ function ToggleFold()
     setlocal foldclose=all
   endif
 endfunction
+
+" Markdown Underline
+function! UnderlineHeading(level)
+  if a:level == 1
+    normal! yypVr=
+  elseif a:level == 2
+    normal! yypVr-
+  else
+    normal! I###<space>
+  endif
+endfunction
+
+" Split screen vertically or horizontally based on current window width
+function! GetSplitDirection()
+    if winwidth(0) < 120
+        return ''
+    else
+        return 'v'
+    endif
+endfunction
+
+" Dynamic Split
+function! DynamicSplit(path)
+    let axis = GetSplitDirection()
+    exec ':'.axis.'sp ' . a:path
+endfunction

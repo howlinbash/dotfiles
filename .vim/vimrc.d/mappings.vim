@@ -119,6 +119,7 @@ nmap <Leader>fz :FZF<CR>
 " map <Leader>fm :NERDTreeToggle<CR>:normal O\<CR>| " Open NerdTree expanded
 " let g:user_emmet_leader_key='<Leader>xp'
 nmap <Leader>xp <C-Y>,
+nnoremap gp :silent %!prettier --stdin --stdin-filepath %<CR>
 
 
 "" UNSORTED

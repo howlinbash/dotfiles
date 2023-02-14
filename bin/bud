@@ -1,0 +1,29 @@
+#! /usr/bin/python3
+
+import csv
+import sys
+
+results = []
+rows = []
+search_string = sys.argv[1]
+db            = csv.reader(open('/home/howlin/contacts/contacts/contacts.csv', 'r'))
+
+def search_contacts():
+    for i, row in enumerate(db):
+        for j, column in enumerate(row):
+            if search_string in column:
+                if i not in rows:
+                    rows.append(i)
+                    results.append(row)
+
+def print_results():
+    for i in results:
+        print('')
+        print(' ---')
+        print('')
+        for j in i:
+            if j != '':
+                print(j)
+
+search_contacts()
+print_results()

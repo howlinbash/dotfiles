@@ -1,0 +1,101 @@
+[global_config]
+  handle_size = 0
+  tab_position = hidden
+  broadcast_default = off
+  suppress_multiple_term_dialog = True
+  always_split_with_profile = True
+[keybindings]
+  cycle_prev = <Primary><Shift>Tab
+  go_up = <Alt>k
+  go_down = <Alt>j
+  go_left = <Alt>h
+  go_right = <Alt>l
+  rotate_cw = <Primary><Shift>r
+  reset = <Primary><Shift>greater
+  reset_clear = <Primary><Shift>g
+  layout_launcher = <Alt>Up
+[profiles]
+  [[default]]
+    background_darkness = 0.75
+    background_type = transparent
+    font = JetBrainsMono Nerd Font 11
+    show_titlebar = False
+    scrollbar_position = hidden
+    scrollback_lines = 5000
+    scrollback_infinite = True
+    use_system_font = False
+  [[large]]
+    font = Monaco 12
+    show_titlebar = False
+    scrollbar_position = hidden
+    use_system_font = False
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      type = Terminal
+      profile = default
+    [[[window0]]]
+      parent = ""
+      type = Window
+  [[ktv web]]
+    [[[child0]]]
+      type = Window
+      parent = ""
+      order = 0
+      position = 3207:43
+      maximised = False
+      fullscreen = False
+      size = 1262, 2099
+      title = fontella@bass:~/src/ktv/web/src
+      last_active_term = 7259c103-eea3-4b0f-b2a6-18c0fe1957ac
+      last_active_window = True
+    [[[child1]]]
+      type = HPaned
+      parent = child0
+      order = 0
+      position = 629
+      ratio = 0.5003977724741447
+    [[[child2]]]
+      type = VPaned
+      parent = child1
+      order = 0
+      position = 650
+      ratio = 0.3104106972301815
+    [[[terminal3]]]
+      type = Terminal
+      parent = child2
+      order = 0
+      profile = default
+      uuid = 7bb7ce11-a7c1-4862-8125-c9b6d57975bc
+      directory = /home/fontella/src/ktv/server
+      command = echo 'npm run start:dev' >> /home/fontella/.bash_history;bash
+    [[[child4]]]
+      type = VPaned
+      parent = child2
+      order = 1
+      position = 725
+      ratio = 0.5038220986796387
+    [[[terminal5]]]
+      type = Terminal
+      parent = child4
+      order = 0
+      profile = default
+      uuid = b088ac20-4412-4784-a0c5-d6a029794994
+      directory = /home/fontella/src/ktv/web
+      command = echo 'npx yarn start' >> /home/fontella/.bash_history;bash
+    [[[terminal6]]]
+      type = Terminal
+      parent = child4
+      order = 1
+      profile = default
+      uuid = 97d0a55e-ac02-416f-9d90-4a01f7a4e3c5
+      directory = /home/fontella/src/ktv/server
+    [[[terminal7]]]
+      type = Terminal
+      parent = child1
+      order = 1
+      profile = default
+      uuid = 7259c103-eea3-4b0f-b2a6-18c0fe1957ac
+      directory = /home/fontella/src/ktv/web/src
+[plugins]

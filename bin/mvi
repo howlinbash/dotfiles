@@ -1,0 +1,3 @@
+#!/bin/bash
+
+echo "mkdir $1 && mv !($1) $1" | xclip -sel c

@@ -1,0 +1,16 @@
+*
+!.bashrc.d/
+!.bashrc.d/*
+!.config/
+!.config/*
+!.notes/
+!.notes/*
+!.ssh/
+!.ssh/*
+!.bash_aliases
+!.bash_profile
+!.bashrc
+!.gitconfig
+!.gitignore
+!bin
+!bin/*

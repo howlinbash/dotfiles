@@ -2,6 +2,8 @@
 !.gitignore
 !fontconfig
 !fontconfig/*
+!howlinbash
+!howlinbash/**
 !i3
 !i3/*
 !nvim

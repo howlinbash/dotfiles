@@ -245,7 +245,7 @@ alias r='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd
 alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
 alias rc='recode UTF-8'
 alias rct='file -bi'
-alias pll='/home/howlin/.gem/ruby/2.4.0/bin/ppl'
+alias pll='$HOME/.gem/ruby/2.4.0/bin/ppl'
 alias wl='cat >> ~/.notes/worklog'
 alias vpn='wg-quick@wg0-client.service'
 alias clock='tty-clock'
@@ -258,7 +258,7 @@ alias appm='calcurse -r31 --format-apt="%S-%E\t%m\n"'
 alias tars='tar -zcvf'
 alias swayc='$EDITOR ~/.config/sway/config'
 alias i3c='$EDITOR ~/.config/i3/config'
-alias book='$EDITOR /home/howlin/books/wiki/index.md'
+alias book='$EDITOR $HOME/books/wiki/index.md'
 
 ## Maybe
 # alias irc=''
@@ -276,21 +276,21 @@ alias adventure='.$HOME/sandbox/node/streams/stream-adventure/node_modules/strea
 alias vimdiff='nvim -d'
 
 ## Todos
-alias todos="cat /home/howlin/.todo/boards/* | ag '^\d' | sort"
-alias pivis="cat /home/howlin/pivigo/todo/boards/* | ag '^\d' | sort"
+alias todos="cat $HOME/.todo/boards/* | ag '^\d' | sort"
+alias pivis="cat $HOME/pivigo/todo/boards/* | ag '^\d' | sort"
 
-alias hunt='$EDITOR /home/howlin/.todo/boards/hunt.todo'
-alias ktv='$EDITOR /home/howlin/.todo/boards/ktv.todo'
-alias shop='$EDITOR /home/howlin/.todo/boards/shop.todo'
-alias cook='$EDITOR /home/howlin/.todo/boards/cook.todo'
-alias fin='$EDITOR /home/howlin/.todo/boards/finland.todo'
-alias health='$EDITOR /home/howlin/.todo/boards/health.todo'
-alias other='$EDITOR /home/howlin/.todo/boards/other.todo'
-alias routines='$EDITOR /home/howlin/.todo/boards/routines.todo'
-alias dev='$EDITOR /home/howlin/.todo/boards/dev.todo'
+alias hunt='$EDITOR $HOME/.todo/boards/hunt.todo'
+alias ktv='$EDITOR $HOME/.todo/boards/ktv.todo'
+alias shop='$EDITOR $HOME/.todo/boards/shop.todo'
+alias cook='$EDITOR $HOME/.todo/boards/cook.todo'
+alias fin='$EDITOR $HOME/.todo/boards/finland.todo'
+alias health='$EDITOR $HOME/.todo/boards/health.todo'
+alias other='$EDITOR $HOME/.todo/boards/other.todo'
+alias routines='$EDITOR $HOME/.todo/boards/routines.todo'
+alias dev='$EDITOR $HOME/.todo/boards/dev.todo'
 alias pm='sudo pacman'
-alias ro='$EDITOR /home/howlin/.todo/boards/ronja.todo'
-alias drive='$EDITOR /home/howlin/.todo/boards/drive.todo'
+alias ro='$EDITOR $HOME/.todo/boards/ronja.todo'
+alias drive='$EDITOR $HOME/.todo/boards/drive.todo'
 # alias build-package='./media/ktv/twitch/unzipped/emerging-platforms/tachyon/packages/tachyon-core/package-builder/index.js'
 alias listapps='comm -23 <(pacman -Qqt | sort) <(pacman -Qqg base | sort)'
 alias pdfjoin="pdfjam --fitpaper true --rotateoversize true --suffix joined "

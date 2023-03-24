@@ -418,3 +418,4 @@ bindsym $mod+Shift+a exec rofi -show calc -no-show-match -no-sort
 ## Across all monitors
 # bindsym $mod+Shift+p exec rofi -show p -modi p:$HOME/bin/rofi-power-menu
 bindsym $mod+Shift+p exec rofi -show p -modi p:$HOME/bin/rofi-power-menu
+exec dunst

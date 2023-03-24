@@ -408,6 +408,10 @@ exec --no-startup-id picom
 # exec --no-startup-id setxkbmap -model pc105 -layout us,fi -option grp:alt_shift_toggle
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 for_window [class="gnome-calculator"] floating enable border pixel 2
+bindsym $mod+Ctrl+$left move workspace to output left
+bindsym $mod+Ctrl+$right move workspace to output right
+bindsym $mod+Ctrl+$up move workspace to output up
+bindsym $mod+Ctrl+$down move workspace to output down
 bindsym $mod+Shift+e exec rofi -show emoji
 bindsym $mod+Shift+a exec rofi -show calc -no-show-match -no-sort
 

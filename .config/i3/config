@@ -340,10 +340,10 @@ bindsym $mod+Shift+p workspace prev
 # Home Monitor Left
 exec_always xrandr \
   --output eDP1 \
-    --primary \
     --mode 1920x1080 \
     --pos 0x1080 \
-  --output HDMI2 \
+  --output DP2-8 \
+    --primary \
     --mode 3840x2160 \
     --pos 1920x0 \
 
@@ -353,12 +353,51 @@ exec_always xrandr \
 #     --primary \
 #     --mode 1920x1080 \
 #     --pos 0x1080 \
-#   --output DP2-9 \
+#   --output HDMI2 \
 #     --mode 3840x2160 \
 #     --pos 1920x0 \
 
+
+# # Home Monitor Triple 1080
+# exec_always xrandr \
+#   --output eDP1 \
+#     --mode 1920x1080 \
+#     --pos 0x0 \
+#   --output DP2-8 \
+#     --right-of eDP1 \
+#   --output DP2-9 \
+#     --mode 1920x1080 \
+#     --right-of DP2-8 \
+#     --rotate left \
+
+
+# # Home Monitor Triple 1080 no eDP
+# exec_always xrandr \
+#   --output eDP1 \
+#     --off \
+#   --output DP2-8 \
+#     --pos 0x0 \
+#     --right-of eDP1 \
+#   --output DP2-9 \
+#     --mode 1920x1080 \
+#     --right-of DP2-8 \
+#     --rotate left \
+
+# # Home Monitor Double rotated
+# exec_always xrandr \
+#   --output eDP1 \
+#     --mode 1920x1080 \
+#     --pos 0x0 \
+#   --output DP2-9 \
+#     --mode 1920x1080 \
+#     --right-of eDP1 \
+#     --rotate left \
+
 # # Laptop
 # exec_always xrandr --output VIRTUAL1 --off --output eDP1 --mode 1920x1080 --pos 0x1080 --rotate normal
+
+# exec_always autorandr --load home
+# exec_always autorandr
 
 # exec_always setxkbmap -option caps:swapescape
 exec xkbcomp -I$HOME/.xkb ~/.xkb/keymap/mykbd $DISPLAY 2> /dev/null

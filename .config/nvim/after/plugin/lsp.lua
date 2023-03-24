@@ -81,7 +81,7 @@ local servers = {
   -- rust_analyzer = {},
   -- eslint = {},
   tsserver = {},
-  sumneko_lua = {
+  lua_ls = {
     Lua = {
       workspace = { checkThirdParty = false },
       telemetry = { enable = false },
@@ -113,8 +113,8 @@ mason_lspconfig.setup_handlers {
   function(server_name)
     require('lspconfig')[server_name].setup {
       capabilities = capabilities,
-      -- on_attach = on_attach,
-      on_attach = function() end,
+      on_attach = on_attach,
+      -- on_attach = function() end,
       settings = servers[server_name],
     }
   end,

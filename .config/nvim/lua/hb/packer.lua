@@ -84,6 +84,7 @@ return require('packer').startup(function(use)
   use 'jose-elias-alvarez/null-ls.nvim' -- Prettier/Eslint/SpellCheck
   -- use 'nvim-treesitter/playground' -- Prettier/Eslint/SpellCheck
   use 'nvim-telescope/telescope-ui-select.nvim' -- move vim ui to telescope
+  use 'kdheepak/lazygit.nvim' -- move vim ui to telescope
 
   -- -- Themes
   use 'tanvirtin/monokai.nvim'

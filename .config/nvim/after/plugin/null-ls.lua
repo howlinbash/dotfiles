@@ -1,7 +1,7 @@
 local null_ls = require("null-ls")
 
 local completion = null_ls.builtins.completion
-local diagnostics = null_ls.builtins.diagnostics
+-- local diagnostics = null_ls.builtins.diagnostics
 local formatting = null_ls.builtins.formatting
 
 -- local augroup = vim.api.nvim_create_augroup("LspFormatting", {})

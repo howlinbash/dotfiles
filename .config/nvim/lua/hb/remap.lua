@@ -101,3 +101,7 @@ hb.lnmap("so", ":so<CR>", "[ ][SO]urce file")
 -- -- PLUGINS
 
 hb.lnmap('how', ':vsp ~/src/manual/index.md<CR>', 'Open The Howlin Manual')
+
+local home_dir = os.getenv("HOME")
+local launch_todo = ':sp '..home_dir..'/.todo/boards/index.todo<CR>'
+hb.lnmap('todo', launch_todo, 'Open Todos')

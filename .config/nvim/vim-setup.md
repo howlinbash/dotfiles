@@ -1,16 +1,18 @@
 
 
 # Todo
-investigate treesitter failures
+Setup snippets
+  https://www.youtube.com/watch?v=Dn800rlPIho
+  https://www.youtube.com/watch?v=KtQZRAkgLqo
+  https://github.com/L3MON4D3/LuaSnip
 change lualine theme so i can read inactive filenames
 mapping for spellcheck
 practice massive window movement and arrangement
 practice leap plugin
+practice treesitter movements
 
 ## Investigate | setup
 Mason
-treesitter
-snippets
 
 ## Tasks
 Setup TODO project

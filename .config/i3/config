@@ -153,7 +153,7 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 # bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
-bindsym $mod+Shift+e exit
+# bindsym $mod+Shift+e exit
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -259,9 +259,9 @@ bindsym $mod+c exec $term -e "$EDITOR $HOME/.i3/config"
 bindsym $mod+o workspace next_on_output
 bindsym $mod+Shift+o workspace prev_on_output
 #
-## Across all monitors
-bindsym $mod+p workspace next
-bindsym $mod+Shift+p workspace prev
+# ## Across all monitors
+# bindsym $mod+p workspace next
+# bindsym $mod+Shift+p workspace prev
 
 
 # set $displayMode "Set display mode [w]ork [l]aptop [h]ome"
@@ -409,3 +409,9 @@ exec --no-startup-id picom
 exec --no-startup-id setxkbmap -model pc105 -layout us,fi -option grp:alt_shift_toggle
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 for_window [class="gnome-calculator"] floating enable border pixel 2
+bindsym $mod+Shift+e exec rofi -show emoji
+bindsym $mod+Shift+a exec rofi -show calc -no-show-match -no-sort
+
+## Across all monitors
+# bindsym $mod+Shift+p exec rofi -show p -modi p:$HOME/bin/rofi-power-menu
+bindsym $mod+Shift+p exec rofi -show p -modi p:$HOME/bin/rofi-power-menu

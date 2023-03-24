@@ -1,5 +1,5 @@
 configuration {
-	modes: "window,drun,run,ssh";
+	modes: "window,drun,run,ssh,emoji,calc";
 	// display-drun: " ";
 	display-drun: ">";
   font: "JetBrainsMono Nerd Font";

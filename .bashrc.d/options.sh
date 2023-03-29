@@ -26,8 +26,7 @@ export EDITOR=/usr/bin/nvim
 # export PATH=/usr/bin/core_perl:"$PATH"
 # been getting some path errors check this on reboot
 # export PATH=/home/howlin/.gem/ruby/2.4.0/bin:/home/howlin/.node_modules/bin:/home/howlin/bin:/usr/local/bin:/usr/local/sbin:/usr/bin
-export PATH=~/bin:"$PATH"
-# export PATH=~/.local/bin:"$PATH"
+export PATH=~/.local/bin:"$PATH"
 source /usr/share/nvm/init-nvm.sh
 shopt -s dotglob # cp dotfiles as well
 # shopt -s dotglob # extended pattern matching?

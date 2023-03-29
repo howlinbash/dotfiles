@@ -29,10 +29,8 @@ export EDITOR=/usr/bin/nvim
 export PATH=~/bin:"$PATH"
 # export PATH=~/.local/bin:"$PATH"
 source /usr/share/nvm/init-nvm.sh
-
-
-# extended pattern matching?
-shopt -s extglob
+shopt -s dotglob # cp dotfiles as well
+# shopt -s dotglob # extended pattern matching?
 
 # Ruby exports
 

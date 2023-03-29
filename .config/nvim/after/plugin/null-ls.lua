@@ -1,6 +1,6 @@
 local null_ls = require("null-ls")
 
-local completion = null_ls.builtins.completion
+-- local completion = null_ls.builtins.completion
 -- local diagnostics = null_ls.builtins.diagnostics
 local formatting = null_ls.builtins.formatting
 
@@ -11,7 +11,7 @@ null_ls.setup({
     formatting.stylua,
     formatting.prettier,
     -- diagnostics.eslint,
-    completion.spell,
+    -- completion.spell,
   },
   -- on_attach = function(client, bufnr)
   --   if client.supports_method("textDocument/formatting") then

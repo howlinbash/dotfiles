@@ -36,7 +36,6 @@ dhclient
 dialog
 diff-so-fancy
 diffutils
-dmenu
 dmidecode
 dmraid
 dnsmasq

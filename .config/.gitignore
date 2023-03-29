@@ -1,4 +1,6 @@
 *
+!__assets__
+!__assets__/**
 !.gitignore
 !fontconfig
 !fontconfig/**

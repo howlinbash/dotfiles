@@ -1,9 +1,13 @@
 *
+!.gitignore
 !__assets__
 !__assets__/**
-!.gitignore
+!dunst
+!dunst/**
 !fontconfig
 !fontconfig/**
+!gtk-3.0
+!gtk-3.0/**
 !howlinbash
 !howlinbash/**
 !i3

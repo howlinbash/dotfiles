@@ -242,7 +242,7 @@ bindsym Print exec scrot
 # bindsym Print exec scrot -e 'mv $f "$HOME/Pictures/screenshots/"
 
 ## LockScreen
-bindsym $mod+q exec i3lock -L -i /home/fontella/Pictures/music_wallpaper_blur.png && systemctl suspend
+bindsym $mod+q exec i3lock -L -i /home/fontella/Pictures/wallpaper/music_wallpaper_blur.png && systemctl suspend
 
 ## Apps
 bindsym $mod+i exec firefox
@@ -401,7 +401,7 @@ exec_always xrandr \
 # exec_always setxkbmap -option caps:swapescape
 exec xkbcomp -I$HOME/.xkb ~/.xkb/keymap/mykbd $DISPLAY 2> /dev/null
 # exec_always feh --bg-fill Pictures/wallpaper.jpg
-exec_always feh --bg-fill Pictures/music_wallpaper.jpg
+exec_always feh --bg-fill Pictures/wallpaper/music_wallpaper.jpg
 # exec_always feh --bg-fill /usr/share/endeavouros/backgrounds/endeavouros-wallpaper.png
 # exec_always feh --bg-fill /usr/share/endeavouros/backgrounds/main_image_star-forming_region_carina_nircam_final-5mb.jpg
 exec --no-startup-id picom

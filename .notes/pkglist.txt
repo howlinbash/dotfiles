@@ -114,8 +114,6 @@ i3lock-color
 i3status
 inetutils
 insomnia-bin
-intel-gpu-tools
-intel-media-driver
 intel-ucode
 inxi
 ipw2100-fw
@@ -147,7 +145,7 @@ man-db
 man-pages
 mdadm
 meld
-mesa-amber
+mesa
 mesa-utils
 mkinitcpio
 mkinitcpio-busybox
@@ -281,7 +279,7 @@ xdg-user-dirs-gtk
 xdg-utils
 xed
 xf86-input-libinput
-xf86-video-intel
+xf86-video-nouveau
 xfce4-appfinder
 xfce4-battery-plugin
 xfce4-datetime-plugin

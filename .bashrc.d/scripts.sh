@@ -10,4 +10,4 @@ pacman -Qqe > ~/.notes/pkglist.txt
 #     eval "$(<~/.ssh-agent-thing)"
 # fi
 
-eval `keychain --agents ssh --eval id_rsa_git`
+eval `keychain --agents ssh --eval id_rsa_rogers`

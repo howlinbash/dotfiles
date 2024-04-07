@@ -129,11 +129,8 @@ inxi
 ipw2100-fw
 ipw2200-fw
 iwd
-jellyfin-server
-jellyfin-web
 jfsutils
 keychain
-kodi
 lazygit
 less
 libdvdcss
@@ -238,7 +235,6 @@ rofi-emoji
 rp-pppoe
 rsync
 s-nail
-samba
 scrot
 sed
 sg3_utils
@@ -246,7 +242,6 @@ signal-desktop
 slack-desktop
 smartmontools
 sof-firmware
-speedtest-cli
 spice-vdagent
 sshfs
 sudo
@@ -281,7 +276,6 @@ ttf-nunito
 ttf-opensans
 ttf-sourcecodepro-nerd
 tumbler
-tuxguitar
 udiskie
 unrar
 unzip

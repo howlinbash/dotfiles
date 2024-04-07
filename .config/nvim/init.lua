@@ -53,7 +53,7 @@ require('packer').startup(function(use)
   }
 
   use {
-    'nvim-telescope/telescope.nvim', tag = '0.1.1',
+    'nvim-telescope/telescope.nvim', tag = '0.1.4',
     -- or                          , branch = '0.1.x',
     requires = { { 'nvim-lua/plenary.nvim' } }
   }
@@ -72,10 +72,13 @@ require('packer').startup(function(use)
   use 'mbbill/undotree' -- undo navigator
   use 'nvim-lualine/lualine.nvim' -- Fancier statusline
   use 'onsails/lspkind.nvim' -- Fancy Icons
-  use 'jose-elias-alvarez/null-ls.nvim' -- Prettier/Eslint/SpellCheck
+  use 'nvimtools/none-ls.nvim' -- Prettier/Eslint/SpellCheck
   -- use 'nvim-treesitter/playground' -- Prettier/Eslint/SpellCheck
   use 'nvim-telescope/telescope-ui-select.nvim' -- move vim ui to telescope
   use 'kdheepak/lazygit.nvim' -- move vim ui to telescope
+  use 'prisma/vim-prisma' -- prisma plugin
+  use 'NvChad/nvim-colorizer.lua' -- add colors to tailwind
+  use 'roobert/tailwindcss-colorizer-cmp.nvim' -- add colors to tailwind
 
   -- -- Themes
   use 'tanvirtin/monokai.nvim'

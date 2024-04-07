@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [ -z "$2" ]
+  then
+    cat /home/fontella/.local/bin/songs-loc.csv | grep -i "$1" | awk -F, '{print $2 "\t" $3 "\t" $10 "\t" $11}' | less
+else
+  cat /home/fontella/.local/bin/songs-loc.csv | grep -i "$1" | grep -i "$2" | awk -F, '{print $2 "\t" $3 "\t" $10 "\t" $11}' | less
+fi
+

@@ -336,15 +336,15 @@ bindsym $mod+Shift+o workspace prev_on_output
 #     --pos 0x0 \
 #     --rotate normal
 
-# Home Monitor Left
-exec_always xrandr \
-  --output eDP1 \
-    --mode 1920x1080 \
-    --pos 0x1080 \
-  --output DP2-8 \
-    --primary \
-    --mode 3840x2160 \
-    --pos 1920x0 \
+# # Home Monitor Left *
+# exec_always xrandr \
+#   --output eDP1 \
+#     --mode 1920x1080 \
+#     --pos 0x1080 \
+#   --output DP2-8 \
+#     --primary \
+#     --mode 3840x2160 \
+#     --pos 1920x0 \
 
 # # Home Monitor Left
 # exec_always xrandr \
@@ -392,11 +392,24 @@ exec_always xrandr \
 #     --right-of eDP1 \
 #     --rotate left \
 
+# # Home Monitor Dock
+# exec_always xrandr \
+#   --output eDP1 \
+#     --mode 1920x1080 \
+#     --pos 0x0 \
+#   --output DP2-8 \
+#     --primary \
+#     --mode 3840x2160 \
+#     --right-of eDP1 \
+
 # # Laptop
 # exec_always xrandr --output VIRTUAL1 --off --output eDP1 --mode 1920x1080 --pos 0x1080 --rotate normal
 
+# # Home
+# exec_always xrandr --output eDP1 --mode 1920x1080 --pos 0x1080 --rotate normal --output DP1 --off --output DP2 --off --output HDMI1 --off --output HDMI2 --primary --mode 3840x2160 --pos 1920x0 --rotate normal --output VIRTUAL1 --off
+
 # exec_always autorandr --load home
-# exec_always autorandr
+exec_always autorandr
 
 # exec_always setxkbmap -option caps:swapescape
 exec xkbcomp -I$HOME/.xkb ~/.xkb/keymap/mykbd $DISPLAY 2> /dev/null
@@ -418,4 +431,4 @@ bindsym $mod+Shift+a exec rofi -show calc -no-show-match -no-sort
 ## Across all monitors
 bindsym $mod+Shift+p exec rofi -show p -modi p:$HOME/.local/bin/rofi-power-menu
 exec dunst
-exec udiskie --tray
+# exec udiskie --tray

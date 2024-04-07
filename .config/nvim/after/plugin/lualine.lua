@@ -5,5 +5,9 @@ require('lualine').setup {
     -- section_separators = '',
   },
   sections = { lualine_c = { '%F', '%m' } },
-  inactive_sections = { lualine_c = { '%F' } }
+
+  inactive_sections = {
+    lualine_c = { { '%F', color = { fg = '#fff' } }, '%m' },
+    -- lualine_c = { '%F', '%m', }
+  },
 }

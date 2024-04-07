@@ -8,8 +8,14 @@ local formatting = null_ls.builtins.formatting
 
 null_ls.setup({
   sources = {
-    formatting.stylua,
-    formatting.prettier,
+    -- formatting.stylua,
+    formatting.prettierd.with({
+      filetypes = {
+        "css", "json", "jsonc","javascript", "typescript",
+        "javascript.glimmer", "typescript.glimmer",
+        "handlebars"
+      }
+    }),
     -- diagnostics.eslint,
     -- completion.spell,
   },

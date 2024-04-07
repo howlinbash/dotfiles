@@ -6,7 +6,7 @@ import sys
 results = []
 rows = []
 search_string = sys.argv[1]
-db            = csv.reader(open('/home/howlin/contacts/contacts/contacts.csv', 'r'))
+db            = csv.reader(open('/home/fontella/contacts/contacts/contacts.csv', 'r'))
 
 def search_contacts():
     for i, row in enumerate(db):

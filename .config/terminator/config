@@ -18,7 +18,7 @@
   [[default]]
     background_darkness = 0.75
     background_type = transparent
-    font = JetBrainsMono Nerd Font 11
+    font = JetBrainsMonoNL NFP Medium Italic 11
     show_titlebar = False
     scrollbar_position = hidden
     scrollback_lines = 5000

@@ -79,7 +79,8 @@ local servers = {
   -- gopls = {},
   -- pyright = {},
   -- rust_analyzer = {},
-  -- eslint = {},
+  eslint = {},
+  tailwindcss = {},
   tsserver = {},
   lua_ls = {
     Lua = {
@@ -189,7 +190,8 @@ cmp.setup {
   sources = {
     { name = 'nvim_lsp' },
     { name = 'luasnip' },
-		{ name = 'buffer', keyword_length = 5 },
+		-- { name = 'buffer', keyword_length = 5 },
+		{ name = 'buffer' },
 	},
 	experimental = {
 		native_menu = false,

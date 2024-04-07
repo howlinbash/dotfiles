@@ -294,3 +294,5 @@ alias drive='$EDITOR $HOME/.todo/boards/drive.todo'
 # alias build-package='./media/ktv/twitch/unzipped/emerging-platforms/tachyon/packages/tachyon-core/package-builder/index.js'
 alias listapps='comm -23 <(pacman -Qqt | sort) <(pacman -Qqg base | sort)'
 alias pdfjoin="pdfjam --fitpaper true --rotateoversize true --suffix joined "
+alias run="npx esrun"
+alias secret="openssl rand -base64 32"

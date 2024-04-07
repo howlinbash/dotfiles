@@ -62,3 +62,9 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 --     callback = function() vim.lsp.buf.formatting_sync() end,
 --   }
 -- )
+
+-- vim.g.prettier#autoformat = 1
+-- vim.g.prettier#autoformat_require_pragma = 0
+vim.g["prettier#autoformat"] = 1
+vim.g["prettier#autoformat_require_pragma"] = 0
+

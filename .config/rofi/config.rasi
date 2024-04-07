@@ -2,7 +2,7 @@ configuration {
 	modes: "window,drun,run,ssh,emoji,calc";
 	// display-drun: " ";
 	display-drun: ">";
-  font: "JetBrainsMono Nerd Font";
+  font: "JetBrainsMono NF";
 	drun-display-format: "{icon} {name}";
   show-icons: true;
   icon-theme: "Papirus";
@@ -255,7 +255,7 @@ configuration {
 /* } */
 
 * {
-  font: "JetBrainsMono Nerd Font Medium 20";
+  font: "JetBrainsMono NF Medium 20";
   bg: #0011121D;
   bg-none: #aa000000;
   accent: #00e6ac;
@@ -327,7 +327,7 @@ prompt {
   enabled: true;
   padding: 3 0 0 18;
   text-color: black;
-  font: "JetBrainsMono Nerd Font Medium 30";
+  font: "JetBrainsMono NF Medium 30";
 }
 
 /* vim: ft=sass

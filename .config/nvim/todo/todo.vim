@@ -1,1 +1,0 @@
-/home/fontella/src/todo/todo.vim

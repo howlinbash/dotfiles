@@ -159,12 +159,7 @@ man-pages
 mcomix
 mdadm
 meld
-mesa-amber
 mesa-utils
-mkinitcpio
-mkinitcpio-busybox
-mkinitcpio-nfs-utils
-mkinitcpio-openswap
 mlocate
 modemmanager
 mpv

@@ -9,3 +9,5 @@
 ;     path = ~/pivigo/src/pivigo-hub/.gitconfig
 [url "gh:"]
 	insteadOf = https://github.com/
+[core]
+	editor = vim

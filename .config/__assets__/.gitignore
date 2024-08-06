@@ -1,0 +1,5 @@
+*
+!.gitignore
+!firefox
+!firefox/**
+!wallpaper

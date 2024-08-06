@@ -17,15 +17,18 @@ automake
 autorandr
 b43-fwcutter
 base
+base-devel
 bash-completion
 bdf-unifont
 bind
 binutils
 bison
+blueman
 bluez
 bluez-utils
 borg
 brightnessctl
+bruno-bin
 btrfs-progs
 calibre
 cantarell-fonts
@@ -129,6 +132,7 @@ inxi
 ipw2100-fw
 ipw2200-fw
 iwd
+jack2-dbus
 jfsutils
 keychain
 lazygit
@@ -159,7 +163,12 @@ man-pages
 mcomix
 mdadm
 meld
+mesa-amber
 mesa-utils
+mkinitcpio
+mkinitcpio-busybox
+mkinitcpio-nfs-utils
+mkinitcpio-openswap
 mlocate
 modemmanager
 mpv
@@ -210,6 +219,7 @@ postgresql
 power-profiles-daemon
 ppp
 pptpclient
+pulseaudio-bluetooth
 pv
 python
 python-defusedxml

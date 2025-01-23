@@ -81,7 +81,7 @@ local servers = {
   -- rust_analyzer = {},
   eslint = {},
   tailwindcss = {},
-  tsserver = {},
+  ts_ls = {},
   lua_ls = {
     Lua = {
       workspace = { checkThirdParty = false },

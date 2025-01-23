@@ -32,6 +32,7 @@ alias src='cd ~/src'
 alias tmp='cd ~/tmp'
 alias usb='cd /media'
 # alias baby='cd ~/life/src/baby'
+alias share='cd /mnt/shared'
 
 ## Templates
 alias finds='echo "find . -iname \"*string*\""'

@@ -10,7 +10,5 @@
 !.gitignore
 !.local
 !.local/*
-!.notes/
-!.notes/*
 !.ssh/
 !.ssh/*

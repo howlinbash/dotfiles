@@ -1,6 +1,3 @@
-# Maintain an up to date list of every package installed on laptop
-pacman -Qqe > ~/.notes/pkglist.txt
-
 # # Start ssh-agent on login
 # if ! pgrep -u "$USER" ssh-agent > /dev/null; then
 #     ssh-agent > ~/.ssh-agent-thing

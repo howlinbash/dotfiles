@@ -1,3 +1,4 @@
+':/home/bash
 b:/mnt/shared/Corkboard
 d:/mnt/shared/Downloads
 e:/mnt/shared/Projects
@@ -9,3 +10,9 @@ o:/mnt/shared/Documents
 p:/mnt/shared/Pictures
 s:/mnt/shared
 t:/mnt/shared/ktv/tracks
+w:/home/bash/src/greenroom
+c:/home/bash/.config
+g:/home/bash/greenroom
+l:/home/bash/Downloads
+n:/home/bash/.config/nvim
+z:/home/bash/.local/share/torbrowser/tbb/x86_64/tor-browser/Browser/Downloads

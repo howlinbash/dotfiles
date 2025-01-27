@@ -17,7 +17,7 @@
   [[default]]
     background_darkness = 0.75
     background_type = transparent
-    font = JetBrainsMonoNL Nerd Font Mono 11
+    font = JetBrainsMonoNL Nerd Font Mono 14
     show_titlebar = False
     scrollbar_position = hidden
     scrollback_lines = 5000

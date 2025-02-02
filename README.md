@@ -26,24 +26,26 @@ worker. The tree is maintained with the gitflow pattern.
 Here's a brief picture of the tree. This may not be up to date.
 
 ```bash
-## main
-
 ## server
 
 ## the
+.local/bin/.gitignore
 .local/share/ranger/bookmarks
 
 ## worker
-.local/bin/songs-loc.csv
+.bash_aliases
+.local/bin/.gitignore
 .local/config/gtk-3.0/bookmarks
 .local/share/ranger/bookmarks
 
 ## howlin
 .config/terminator/config
+.local/bin/.gitignore
 .local/config/gtk-3.0/bookmarks
 .local/share/ranger/bookmarks
 
 ## bass
+.local/bin/.gitignore
 .local/config/gtk-3.0/bookmarks
 .local/share/ranger/bookmarks
 ```

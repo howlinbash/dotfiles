@@ -1,0 +1,17 @@
+#!/bin/bash
+
+mount_hd() {
+  mkdir -p "/run/media/dells/$1"
+  chown -R dells "/run/media/dells/$1"
+  cryptsetup open "/dev/$2"  "$1"
+  mount "/dev/mapper/$1" "/run/media/dells/$1"
+}
+
+mount_hd "elephant" "sdb1"
+mount_hd "dumbledore" "sdc"
+
+systemctl enable --now nfs-server
+exportfs -r
+
+firewall-cmd --add-service=nfs --permanent
+firewall-cmd --reload

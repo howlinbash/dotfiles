@@ -156,3 +156,5 @@ alias listapps='comm -23 <(pacman -Qqt | sort) <(pacman -Qqg base | sort)'
 alias pdfjoin="pdfjam --fitpaper true --rotateoversize true --suffix joined "
 alias run="npx esrun"
 alias secret="openssl rand -base64 32"
+alias amount="sudo mount -a"
+

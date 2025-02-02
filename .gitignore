@@ -12,3 +12,4 @@
 !.local/*
 !.ssh/
 !.ssh/*
+!README.md

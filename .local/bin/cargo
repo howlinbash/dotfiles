@@ -7,8 +7,18 @@ mount_hd() {
   mount "/dev/mapper/$1" "/run/media/dells/$1"
 }
 
-mount_hd "elephant" "sdb1"
-mount_hd "dumbledore" "sdc"
+lsblk
+
+echo "Elephant comes with a partition (/dev/sdX1)"
+echo "Dumbledore does not (/dev/sdX)"
+
+echo "What is Elephants path? (e.g. 'sdb1'):"
+read -s EL_PATH
+echo "What is Elephants path? (e.g. 'sdc'):"
+read -s DU_PATH
+
+mount_hd "elephant" "$EL_PATH"
+mount_hd "dumbledore" "$DU_PATH"
 
 systemctl enable --now nfs-server
 exportfs -r

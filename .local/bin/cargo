@@ -1,11 +1,25 @@
 #!/bin/bash
 
-mount_hd() {
-  mkdir -p "/run/media/dells/$1"
-  chown -R dells "/run/media/dells/$1"
-  cryptsetup open "/dev/$2"  "$1"
-  mount "/dev/mapper/$1" "/run/media/dells/$1"
+cleanup() {
+  echo "Cleaning up..."
+  kill "$bg_pid" 2>/dev/null
 }
+
+auth_sudo() {
+  sudo -v
+  trap cleanup EXIT
+  (while true; do sleep 60; sudo -v; done) &
+  bg_pid=$!
+}
+
+mount_hd() {
+  sudo mkdir -p "/run/media/dells/$1"
+  sudo chown -R dells "/run/media/dells/$1"
+  sudo cryptsetup open "/dev/$2"  "$1"
+  sudo mount "/dev/mapper/$1" "/run/media/dells/$1"
+}
+
+auth_sudo
 
 lsblk
 
@@ -13,15 +27,15 @@ echo "Elephant comes with a partition (/dev/sdX1)"
 echo "Dumbledore does not (/dev/sdX)"
 
 echo "What is Elephants path? (e.g. 'sdb1'):"
-read -s EL_PATH
+read EL_PATH
 echo "What is Elephants path? (e.g. 'sdc'):"
-read -s DU_PATH
+read DU_PATH
 
 mount_hd "elephant" "$EL_PATH"
 mount_hd "dumbledore" "$DU_PATH"
 
-systemctl enable --now nfs-server
-exportfs -r
+sudo systemctl enable --now nfs-server
+sudo exportfs -r
 
-firewall-cmd --add-service=nfs --permanent
-firewall-cmd --reload
+sudo firewall-cmd --add-service=nfs --permanent
+sudo firewall-cmd --reload

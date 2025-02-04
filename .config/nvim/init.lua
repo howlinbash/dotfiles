@@ -108,5 +108,4 @@ if is_bootstrap then
   return
 else
   require('hb')
-  require('todo')
 end

@@ -1,4 +1,8 @@
 {
+  "book_list_pin_splitter_state": {
+    "__class__": "bytearray",
+    "__value__": "AAAA/wAAAAEAAAACAAABAP////8A/////wEAAAABAA=="
+  },
   "color_palette": "dark",
   "cover_grid_color": [
     80,
@@ -6,6 +10,104 @@
     80
   ],
   "cover_grid_texture": null,
+  "custom_colors_for_color_dialog": [
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ]
+  ],
   "dark_palette_name": "",
   "dark_palettes": {
     "__current__": {
@@ -31,6 +133,57 @@
       "Window": "#2d2d2d",
       "WindowText": "#dddddd",
       "WindowText-disabled": "#dddddd"
+    }
+  },
+  "geometry-of-calibre_main_window_geometry": {
+    "frame_geometry": {
+      "height": 2071,
+      "width": 3796,
+      "x": 22,
+      "y": 67
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 2065,
+      "width": 3790,
+      "x": 25,
+      "y": 70
+    },
+    "maximized": true,
+    "normal_geometry": {
+      "height": 2065,
+      "width": 3790,
+      "x": 25,
+      "y": 70
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAAWAAAAQwAADukAAAhZAAAAGQAAAEYAAA7mAAAIVgAAAAACAAAADwAAAAAZAAAARgAADuYAAAhW"
+    },
+    "screen": {
+      "depth": 24,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 2160,
+        "width": 3840,
+        "x": 0,
+        "y": 0
+      },
+      "index_in_screens_list": 0,
+      "manufacturer": "Samsung Electric Company",
+      "model": "LS32A70",
+      "name": "DP-6",
+      "serial": "H4ZT400156",
+      "size_in_logical_pixels": {
+        "height": 2160,
+        "width": 3840
+      },
+      "virtual_geometry": {
+        "height": 2160,
+        "width": 4920,
+        "x": 0,
+        "y": 0
+      }
     }
   },
   "geometry-of-customize-palette-geometry": {
@@ -135,8 +288,9 @@
       }
     }
   },
+  "grid view visible": true,
   "library_usage_stats": {
-    "/mnt/shared/Books/Calibre Library": 2
+    "/mnt/shared/Books/Calibre Library": 4
   },
   "light_palette_name": "",
   "light_palettes": {
@@ -184,7 +338,7 @@
       "book_details_width": 0.29954614220877457,
       "cover_browser_height": 0.28600823045267487,
       "quick_view_height": 0.23765432098765432,
-      "tag_browser_width": 0.29954614220877457
+      "tag_browser_width": 0.1704485488126649
     },
     "wide_visibility": {
       "book_details": true,
@@ -195,6 +349,9 @@
     }
   },
   "quick_start_guide_added": true,
+  "qv_open_at_shutdown": false,
+  "search bar visible": true,
   "show_emblems": false,
+  "tag browser search box visible": false,
   "toolbar_icon_size": "small"
 }

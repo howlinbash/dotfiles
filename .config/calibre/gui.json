@@ -1,7 +1,7 @@
 {
   "book_list_pin_splitter_state": {
     "__class__": "bytearray",
-    "__value__": "AAAA/wAAAAEAAAACAAABAP////8A/////wEAAAABAA=="
+    "__value__": "AAAA/wAAAAEAAAACAAABAAAAAEYA/////wEAAAABAA=="
   },
   "color_palette": "dark",
   "cover_grid_color": [
@@ -239,50 +239,50 @@
   },
   "geometry-of-preferences dialog geometry": {
     "frame_geometry": {
-      "height": 750,
-      "width": 934,
-      "x": 2415,
-      "y": 228
+      "height": 759,
+      "width": 936,
+      "x": 1453,
+      "y": 705
     },
     "full_screened": false,
     "geometry": {
       "height": 720,
       "width": 930,
-      "x": 2417,
-      "y": 256
+      "x": 1456,
+      "y": 741
     },
     "maximized": false,
     "normal_geometry": {
       "height": 720,
       "width": 930,
-      "x": 2417,
-      "y": 256
+      "x": 1456,
+      "y": 741
     },
     "qt": {
       "__class__": "bytearray",
-      "__value__": "AdnQywADAAAAAAlvAAAA5AAADRQAAAPRAAAJcQAAAQAAAA0SAAADzwAAAAEAAAAAB4AAAAlxAAABAAAADRIAAAPP"
+      "__value__": "AdnQywADAAAAAAWtAAACwQAACVQAAAW3AAAFsAAAAuUAAAlRAAAFtAAAAAAAAAAADwAAAAWwAAAC5QAACVEAAAW0"
     },
     "screen": {
       "depth": 24,
       "device_pixel_ratio": 1.0,
       "geometry_in_logical_pixels": {
-        "height": 1080,
-        "width": 1920,
-        "x": 1920,
+        "height": 2160,
+        "width": 3840,
+        "x": 0,
         "y": 0
       },
-      "index_in_screens_list": 1,
-      "manufacturer": "Seiko Epson Corporation",
-      "model": "EPSON PJ",
-      "name": "VGA-1",
-      "serial": "16843009",
+      "index_in_screens_list": 0,
+      "manufacturer": "Samsung Electric Company",
+      "model": "LS32A70",
+      "name": "DP-6",
+      "serial": "H4ZT400156",
       "size_in_logical_pixels": {
-        "height": 1080,
-        "width": 1920
+        "height": 2160,
+        "width": 3840
       },
       "virtual_geometry": {
-        "height": 1080,
-        "width": 3840,
+        "height": 2160,
+        "width": 4920,
         "x": 0,
         "y": 0
       }
@@ -290,7 +290,7 @@
   },
   "grid view visible": true,
   "library_usage_stats": {
-    "/mnt/shared/Books/Calibre Library": 4
+    "/mnt/shared/Books/Calibre Library": 6
   },
   "light_palette_name": "",
   "light_palettes": {
@@ -353,5 +353,5 @@
   "search bar visible": true,
   "show_emblems": false,
   "tag browser search box visible": false,
-  "toolbar_icon_size": "small"
+  "toolbar_icon_size": "large"
 }

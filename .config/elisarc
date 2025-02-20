@@ -1,0 +1,11 @@
+[ElisaFileIndexer]
+RootPath[$e]=/mnt/shared/Music/iTunes/iTunes Media/Music,/mnt/shared/Music/to-import,/mnt/shared/Music/to-convert
+
+[UiSettings]
+ColorScheme=Breeze Dark
+
+[Views]
+ColorScheme=Breeze Dark
+EmbeddedView=AllGenres
+SortRolePreferences=Track==AlbumRole
+ViewStylePreferences=FileName==GridStyle

@@ -6,6 +6,7 @@
 !calibre/**
 !dunst
 !dunst/**
+!elisarc
 !fontconfig
 !fontconfig/**
 !gtk-3.0

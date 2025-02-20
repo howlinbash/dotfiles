@@ -5,4 +5,4 @@ sudo modprobe -r iwlmvm
 sudo modprobe -r iwlwifi
 sleep 1
 sudo modprobe iwlwifi
-sudo systemctl stop NetworkManager
+sudo systemctl start NetworkManager

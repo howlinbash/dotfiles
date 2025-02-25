@@ -31,6 +31,7 @@ alias play='cd ~/cupboard/sandpit'
 alias src='cd ~/src'
 alias tmp='cd ~/tmp'
 alias usb='cd /media'
+alias share='cd /run/media/dells/elephant/shared'
 
 ## Templates
 alias finds='echo "find . -iname \"*string*\""'
